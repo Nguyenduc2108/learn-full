@@ -1,0 +1,16 @@
+.btn:active {
+    background-color: #f00;
+    color: #fff;
+}
+
+input:focus::placeholder {
+    color: #f00;
+}
+
+input:checked + span {
+    color: #f00;
+}
+
+input[disabled] + span {
+    color: #0f0;
+}

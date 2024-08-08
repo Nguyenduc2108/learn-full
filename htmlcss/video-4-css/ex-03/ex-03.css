@@ -1,0 +1,23 @@
+/* a[target] {
+    color: red;
+}
+
+a[href^="http"] {
+    color: rgb(234, 0, 255);
+}
+
+a[href*="asdf"] {
+    color: rgb(68, 182, 231);
+}
+
+[class^="col"] {
+    color: green;
+}
+
+* {
+    color: red;
+} */
+
+.products > * {
+    color: red;
+}

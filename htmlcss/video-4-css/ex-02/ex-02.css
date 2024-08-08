@@ -1,0 +1,7 @@
+/* .box p + h2 {
+    color: red;
+} */
+
+.box h2 + h2 {
+    color: red;
+}
