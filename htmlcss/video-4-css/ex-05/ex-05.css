@@ -14,3 +14,15 @@ input:checked + span {
 input[disabled] + span {
     color: #0f0;
 }
+
+.products h2:nth-child(2) {
+    color: #f00;
+}
+
+.products h2:nth-child(odd) {
+    color: #0f0;
+}
+
+.products h2:nth-child(even) {
+    color: rgb(188, 25, 229);
+}

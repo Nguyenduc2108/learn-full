@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url("./fonts/Poppins-Bold.ttf");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-family: "My Custom Font";
+}
+.title {
+    font-size: 40px;
+    color: red;
+}
+
+p {
+    font-size: 20px;
+    color: blue;
+}

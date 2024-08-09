@@ -41,8 +41,10 @@
         . first-child, last-child
         . first-of-type, last-of-type
 
-        ==> bổ sung của video 4
-        . nth-child
+        ==> bổ sung của video 4 ( Phần video 5)
+        . nth-child:
+            . n(0 -> n), số => ảnh hưởng performance
+            . odd, even
         . nth-of-type
 
 # 2. Khác

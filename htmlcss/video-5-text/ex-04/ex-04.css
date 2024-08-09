@@ -1,0 +1,14 @@
+.title {
+    font-size: 40px;
+    color: red;
+}
+
+h1 {
+    word-wrap: break-word;
+    /* word-break: break-all; */
+}
+
+p {
+    font-size: 20px;
+    color: blue;
+}
