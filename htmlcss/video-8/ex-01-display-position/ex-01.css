@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .title {
+    color: red;
+}
+
+.title:hover {
+    display: none;
+    opacity: 0;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    background: #333;
+} */
+
+/* .box {
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+.content {
+    border: 1px solid #333;
+}
+
+.item {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: violet;
+}
+
+.item:nth-child(2) {
+    position: relative;
+
+    left: calc(100% - 200px);
+} */
+
+/* .modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.open-modal {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 99px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+}
+
+.open-modal:hover {
+    background: #fff;
+    color: #333;
+}
+
+input:checked + .modal {
+    display: block;
+}
+
+.modal .content {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 6px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: #333;
+    color: #fff;
+}
+
+.content p {
+    margin-top: 20px;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+.box {
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid red;
+}
