@@ -1,0 +1,113 @@
+.songs {
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid red;
+    counter-reset: song-number;
+}
+
+.songs h2 {
+    /* display: list-item;
+    list-style: inside decimal-leading-zero; */
+    color: #000;
+    counter-increment: song-number;
+}
+
+.songs h2::before {
+    content: "#" counter(song-number);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background: green;
+}
+
+.box h2::before {
+    content: "";
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.radio-1 {
+    position: relative;
+    user-select: none;
+    padding: 20px 30px;
+}
+
+.radio-1::before,
+.radio-1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.radio-1::before {
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+.radio-1::after {
+    left: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: green;
+    display: none;
+}
+
+.radio-1.disable::before {
+    border-color: #ccc;
+}
+
+.radio-1.disable::after {
+    background: #ccc;
+}
+
+.radio-1.checkbox::before {
+    border-radius: 4px;
+}
+
+.radio-1.checkbox::after {
+    top: 22px;
+    left: 4px;
+    height: 7px;
+    border-radius: 0;
+    background: transparent;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+}
+
+#radio-1:checked + .radio-1::after,
+#radio-2:checked + .radio-1::after,
+#radio-3:checked + .radio-1::after,
+#radio-4:checked + .radio-1::after,
+#checkbox-1:checked + .radio-1::after,
+#checkbox-2:checked + .radio-1::after,
+#checkbox-3:checked + .radio-1::after,
+#checkbox-4:checked + .radio-1::after {
+    display: block;
+}
+
+#checkbox-1:checked + .radio-1::before,
+#checkbox-2:checked + .radio-1::before {
+    background: green;
+}
+
+#checkbox-3:checked + .radio-1::before,
+#checkbox-4:checked + .radio-1::before {
+    background: #ccc;
+}

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+}
+
+.product .item {
+    border: 1px solid #fff;
+    color: #fff;
+    background: green;
+}
