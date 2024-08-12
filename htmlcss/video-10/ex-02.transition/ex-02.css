@@ -1,0 +1,10 @@
+.box h1 {
+    color: red;
+    transition-property: padding-left, color;
+    transition-duration: 1s;
+}
+
+.box h1:hover {
+    padding-left: 120px;
+    color: green;
+}
