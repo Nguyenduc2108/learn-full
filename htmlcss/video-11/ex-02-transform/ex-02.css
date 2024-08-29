@@ -1,0 +1,21 @@
+.wrap {
+    padding: 30px;
+    border: 1px solid red;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    background: #000;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.wrap:hover .box {
+    /* transform: rotateX(360deg) scale(1.5); */
+    transform: skew(20deg, 20deg);
+}
