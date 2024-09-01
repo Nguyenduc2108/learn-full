@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: green;
+}
+
+@media (max-width: 1199px) {
+    body {
+        color: red;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        color: yellow;
+    }
+}
+
+@media (max-width: 575px) {
+    .box p {
+        display: none;
+    }
+}

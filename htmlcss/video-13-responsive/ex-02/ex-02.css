@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 30px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul a {
+    padding: 8px 14px;
+}
+
+ul a:hover {
+    color: #4c91fa;
+}
+
+.action {
+    margin-left: 30px;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 99px;
+    font-weight: 500;
+    background-color: #4c91fa;
+    color: #fff;
+}
+
+.menu-btn {
+    display: none;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 991px) {
+    .action {
+        margin-left: auto;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        z-index: 2;
+        width: 40%;
+        background: #333;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        transition-property: opacity, visibility, transform;
+    }
+
+    input:checked ~ .nav {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav ul {
+        width: 100%;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 40px;
+        overflow-y: auto;
+    }
+
+    .nav li {
+        width: 100%;
+    }
+
+    .nav a {
+        display: block;
+        padding: 20px 10px 10px 40px;
+        color: #fff;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        transition-property: opacity, visibility;
+    }
+
+    input:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        width: 80%;
+    }
+
+    .action {
+        display: none;
+    }
+}
