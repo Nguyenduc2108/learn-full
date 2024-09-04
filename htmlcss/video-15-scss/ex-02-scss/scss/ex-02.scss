@@ -1,0 +1,45 @@
+// Comment Scss
+
+/**
+ * Comment css
+ */
+
+// cú pháp lồng: selector , thuộc tính(không nên dùng)
+@import "parts/variables";
+@import "parts/header";
+@import "parts/footer";
+
+// Placeholder Selector
+%section-base {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+
+// mixin
+@mixin section-base2 {
+    width: 200px;
+    height: 200px;
+}
+
+@mixin center($width, $space: 0) {
+    max-width: $width;
+    margin: $space auto;
+}
+
+// app
+.box {
+    background: #000;
+    @include section-base2;
+    @include center(1000px, 20px);
+}
+
+.box1 {
+    background: red;
+    @extend %section-base;
+}
+
+.posts {
+    background: green;
+    @extend %section-base;
+}
