@@ -1,0 +1,51 @@
+.box {
+  font-size: 10px;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  background: red;
+}
+
+#hello {
+  width: 120%;
+}
+
+.small {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.regular {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.large {
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.small {
+  width: 40px;
+}
+
+.normal {
+  width: 60px;
+}
+
+.large {
+  width: 80px;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  color: #333;
+}
+@media (min-width: 768px) {
+  .box {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

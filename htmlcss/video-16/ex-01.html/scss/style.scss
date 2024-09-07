@@ -1,0 +1,84 @@
+$a: hello;
+$b: 10;
+$c: 100;
+$d: background;
+
+.box {
+    font-size: #{$b}px;
+    width: #{$b * 10}px;
+    height: #{$b * 10}px;
+    // height: #{$c + 0%};
+    background: orange;
+    #{$d}: red;
+}
+
+##{$a} {
+    width: 120%;
+}
+
+// loop: cú pháp trong lâp trình , cho phép lặp đi lặp lại 1 đoạn chương trình
+
+// @for : @for $i from 1 through 12 ; from 1 to 12
+// @while -> use litter
+// @each: @each in
+
+// .col-1 {
+//     width: 100% / 12 / 1;
+// }
+
+// @for $i from 1 through 12 {
+//     @if $i % 2 == 0 {
+//         .col-#{$i} {
+//             width: 100% / (12 / $i);
+//         }
+//     }
+// }
+
+// $sizes: 30, 50, 100, 200; // array
+// $index: 0;
+
+// @each $size in $sizes {
+//     $index: $index + 1;
+
+//     .item-#{$size} {
+//         @if $index == length($sizes) {
+//             width: 100%;
+//         } @else {
+//             width: $size + px;
+//             max-width: 2 * $size + 0%;
+//         }
+//     }
+// }
+
+$sizes: (small, normal, 40), (regular, bold, 60), (large, 900, 80); // array
+
+@each $type, $weight, $size in $sizes {
+    .#{$type} {
+        font-weight: $weight;
+        font-size: #{$size}px;
+    }
+}
+
+//key: value
+
+$sizes: (
+    small: 40,
+    normal: 60,
+    large: 80,
+);
+
+@each $type, $size in $sizes {
+    .#{$type} {
+        width: #{$size}px;
+    }
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    color: #333;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
