@@ -95,17 +95,3 @@
 ==> every() ngược lại với some().
 
 ##### Case thực thế: check, check all (gmail, check sản phẩm để xóa, thanh toán, ...)
-
-    24.
-
-    25.
-
-    26.
-
-    27.
-
-    28.
-
-    29.
-
-    30.
